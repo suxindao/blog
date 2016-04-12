@@ -1,0 +1,43 @@
+var gulp = require('gulp');
+var elixir = require('laravel-elixir');
+var del = require('del');
+
+/*
+ |--------------------------------------------------------------------------
+ | Elixir Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Elixir provides a clean, fluent API for defining some basic Gulp tasks
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for our application, as well as publishing vendor resources.
+ |
+ */
+
+//删除 public 目录下的 build js css目录
+gulp.task('clean', function (cb) {
+  del([
+    'public/build',
+    'public/css',
+    'public/js'
+  ], cb);
+});
+
+elixir(function (mix) {
+  mix.task('clean');
+
+  mix.copy('bower_components/jquery/dist/jquery.min.js', 'public/js/jquery.min.js');
+  mix.copy('bower_components/bootstrap/dist/js/bootstrap.min.js', 'public/js/bootstrap.min.js');
+  mix.copy('bower_components/requirejs/require.js', 'public/js/require.js');
+
+  mix.sass(['app.scss'], 'public/css/app.css')
+    .scripts(['app.js'], 'public/js/app.js')
+    .scripts(['app2.js'], 'public/js/app2.js')
+    .scripts(['aa.js', 'bb.js'], 'public/js/aabb.js')
+    .scripts(['config.js'], 'public/js/config.js')
+    .version(['css/app.css', 'js/config.js']);
+
+
+  mix.browserSync({
+    proxy: 'lblog.com'
+  });
+});

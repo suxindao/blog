@@ -1,0 +1,29 @@
+{
+  "name": "lblog",
+  "description": "This is the test project for Laravel+gulp+bower",
+  "main": "",
+  "authors": [
+    "suxindao <xindao.su@healthcrosscn.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Laravel",
+    "bower",
+    "gulp"
+  ],
+  "moduleType": [],
+  "homepage": "lblog.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "requirejs": "^2.2.0",
+    "bootstrap": "^3.3.6"
+  }
+}
