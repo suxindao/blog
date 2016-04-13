@@ -61,11 +61,13 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 11）项目目录运行 php artisan migrate
 
-12）启动项目，执行命令 php artisan serve
+12）项目目录运行 gulp ,编译 sass 和 js 文件
 
-13）在浏览器中输入地址 http://localhost:8000 查看项目
+13）启动项目，执行命令 php artisan serve
 
+14）在浏览器中输入地址 http://localhost:8000 查看项目
 
+15) 输入命令 gulp watch 可动态调试
 
 祝好运！
 
