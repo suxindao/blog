@@ -23,10 +23,11 @@ gulp.task('clean', function (cb) {
 });
 
 elixir(function (mix) {
-  mix.task('clean');
+//  mix.task('clean');
 
   mix.copy('bower_components/jquery/dist/jquery.min.js', 'public/js/jquery.min.js');
   mix.copy('bower_components/bootstrap/dist/js/bootstrap.min.js', 'public/js/bootstrap.min.js');
+  mix.copy('bower_components/bootstrap/dist/css/bootstrap.min.css', 'public/css/bootstrap.min.css');
   mix.copy('bower_components/requirejs/require.js', 'public/js/require.js');
 
   mix.sass(['app.scss'], 'public/css/app.css')

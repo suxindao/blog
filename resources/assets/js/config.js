@@ -10,22 +10,36 @@ requirejs.config({
     app1: 'app',
     app2: 'app2',
     app3: 'aabb',
-    jquery: 'jquery',
-    bootstrap: 'bootstrap'
+    jquery: 'jquery.min',
+    bootstrap: 'bootstrap.min'
   },
   shim: {
+    bootstrap: {
+      deps: ['jquery'],
+      exports: 'bootstrap'
+    },
     app3: {
       init: function () {
         return {
-          hello: alertAA,
-          hello2: alertBB
-        }
+          hello1: alertAA,
+          hello2: alertBB,
+          hello3: alertCC
+        };
       }
     }
   }
 });
-requirejs(['app', 'app2', 'app3'], function (app1, app2, app3) {
-  app3.hello();
+
+var myApi = {};
+
+requirejs(['app1', 'app2', 'app3', 'bootstrap'], function (app1, app2, app3) {
+//  alert($().jquery);
+//  app1.hello();
+//  app2.hello();
+//  app3.hello3();
+  myApi.app1 = app1;
+  myApi.app2 = app2;
+  myApi.app3 = app3;
 });
 
 

@@ -12,5 +12,5 @@ define([], function () {
     showLog: function (Message) {
       console.log(Message);
     }
-  }
+  };
 });

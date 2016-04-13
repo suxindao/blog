@@ -8,3 +8,7 @@
 function alertBB() {
   alert("hello, app bbb");
 }
+
+function alertCC() {
+  alert("hello, app ccc");
+}
