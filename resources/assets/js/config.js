@@ -5,7 +5,7 @@
  */
 
 requirejs.config({
-  baseUrl: 'js',
+  baseUrl: '/js',
   paths: {
     app1: 'app',
     app2: 'app2',
