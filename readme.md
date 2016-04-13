@@ -26,13 +26,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
+# 项目说明
 
 此项目为自己学习PHP框架 Laravel 的实例项目，增加了以下功能：
 1)扩展了用 Bower 来管理前端包
 2)使用 RequireJS 来管理所有JS文件
 3)试验了 Laravel 的 version 功能配置css和js文件
 
-项目启动：
+# 项目启动
+
 1）安装 PHP7.0
 2）安装 Composer，升级到 1.0.0
 3）安装 Laravel 框架
