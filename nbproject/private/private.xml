@@ -3,16 +3,44 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/suxindao/work/blog/gulpfile.js</file>
-            <file>file:/Users/suxindao/work/blog/resources/assets/js/app.js</file>
+            <file>file:/Users/suxindao/work/blog/resources/views/auth/passwords/email.blade.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Http/Controllers/Auth/AuthController.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Http/Kernel.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Http/Requests/Request.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Providers/AppServiceProvider.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Providers/EventServiceProvider.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Providers/RouteServiceProvider.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Providers/AuthServiceProvider.php</file>
+            <file>file:/Users/suxindao/work/blog/public/index.php</file>
+            <file>file:/Users/suxindao/work/blog/bootstrap/app.php</file>
+            <file>file:/Users/suxindao/work/blog/config/filesystems.php</file>
+            <file>file:/Users/suxindao/work/blog/config/broadcasting.php</file>
             <file>file:/Users/suxindao/work/blog/resources/assets/js/config.js</file>
-            <file>file:/Users/suxindao/work/blog/resources/assets/js/bb.js</file>
-            <file>file:/Users/suxindao/work/blog/bower.json</file>
-            <file>file:/Users/suxindao/work/blog/resources/assets/js/app2.js</file>
+            <file>file:/Users/suxindao/work/blog/config/database.php</file>
+            <file>file:/Users/suxindao/work/blog/config/view.php</file>
+            <file>file:/Users/suxindao/work/blog/config/services.php</file>
+            <file>file:/Users/suxindao/work/blog/config/cache.php</file>
+            <file>file:/Users/suxindao/work/blog/resources/views/auth/emails/password.blade.php</file>
+            <file>file:/Users/suxindao/work/blog/gulpfile.js</file>
+            <file>file:/Users/suxindao/work/blog/app/Console/Kernel.php</file>
+            <file>file:/Users/suxindao/work/blog/config/auth.php</file>
+            <file>file:/Users/suxindao/work/blog/resources/views/layouts/app.blade.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Http/routes.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Console/Commands/Inspire.php</file>
+            <file>file:/Users/suxindao/work/blog/resources/views/auth/passwords/reset.blade.php</file>
             <file>file:/Users/suxindao/work/blog/resources/views/welcome.blade.php</file>
+            <file>file:/Users/suxindao/work/blog/config/mail.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Http/Middleware/Authenticate.php</file>
+            <file>file:/Users/suxindao/work/blog/config/compile.php</file>
+            <file>file:/Users/suxindao/work/blog/app/User.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Http/Controllers/HomeController.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Jobs/Job.php</file>
+            <file>file:/Users/suxindao/work/blog/config/app.php</file>
+            <file>file:/Users/suxindao/work/blog/config/session.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Http/Controllers/Auth/PasswordController.php</file>
             <file>file:/Users/suxindao/work/blog/resources/views/home.blade.php</file>
-            <file>file:/Users/suxindao/work/blog/resources/assets/js/aa.js</file>
-            <file>file:/Users/suxindao/work/blog/readme.md</file>
+            <file>file:/Users/suxindao/work/blog/config/queue.php</file>
+            <file>file:/Users/suxindao/work/blog/app/Http/Controllers/Controller.php</file>
         </group>
     </open-files>
 </project-private>

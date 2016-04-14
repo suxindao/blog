@@ -24,6 +24,7 @@
   "dependencies": {
     "jquery": "^2.2.3",
     "requirejs": "^2.2.0",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "fullpage.js": "^2.7.9"
   }
 }
