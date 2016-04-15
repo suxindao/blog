@@ -11,12 +11,16 @@ requirejs.config({
     app2: 'app2',
     app3: 'aabb',
     jquery: 'jquery.min',
-    bootstrap: 'bootstrap.min'
+    bootstrap: 'bootstrap.min',
+    fullpage: 'jquery.fullpage.min'
   },
   shim: {
     bootstrap: {
       deps: ['jquery'],
       exports: 'bootstrap'
+    },
+    fullpage: {
+      deps: ['jquery']
     },
     app3: {
       init: function () {
@@ -32,7 +36,7 @@ requirejs.config({
 
 var myApi = {};
 
-requirejs(['app1', 'app2', 'app3', 'bootstrap'], function (app1, app2, app3) {
+requirejs(['app1', 'app2', 'app3', 'fullpage', 'bootstrap'], function (app1, app2, app3) {
 //  alert($().jquery);
 //  app1.hello();
 //  app2.hello();
@@ -40,6 +44,19 @@ requirejs(['app1', 'app2', 'app3', 'bootstrap'], function (app1, app2, app3) {
   myApi.app1 = app1;
   myApi.app2 = app2;
   myApi.app3 = app3;
+
+//  fullpage.initialize('#fullpage', {
+//    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+//    menu: '#menu',
+//    css3: true
+//  });
+
+  $('#fullpage').fullpage({
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    menu: '#menu',
+    css3: true
+  });
+
 });
 
 

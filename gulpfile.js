@@ -25,10 +25,20 @@ gulp.task('clean', function (cb) {
 elixir(function (mix) {
 //  mix.task('clean');
 
+  //安装 jquery 插件
   mix.copy('bower_components/jquery/dist/jquery.min.js', 'public/js/jquery.min.js');
+  
+  //安装 bootstrap 插件
   mix.copy('bower_components/bootstrap/dist/js/bootstrap.min.js', 'public/js/bootstrap.min.js');
   mix.copy('bower_components/bootstrap/dist/css/bootstrap.min.css', 'public/css/bootstrap.min.css');
+  
+  //安装 fullpagejs 插件
+  mix.copy('bower_components/fullpage.js/dist/jquery.fullpage.min.js', 'public/js/jquery.fullpage.min.js');
+  mix.copy('bower_components/fullpage.js/dist/jquery.fullpage.min.css', 'public/css/jquery.fullpage.min.css');
+   
+  //安装 require 插件
   mix.copy('bower_components/requirejs/require.js', 'public/js/require.js');
+  
 
   mix.sass(['app.scss'], 'public/css/app.css')
     .scripts(['app.js'], 'public/js/app.js')

@@ -1,7 +1,59 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-.sxd{
-  color: #00F;
-  padding: 10px;
-  font-size: 26px;
+/* Custom CSS
+ * --------------------------------------- */
+body{
+  font-family: arial,helvetica;
+  color: #F2F2F2;
+}
+h1{
+  font-size: 6em;
+}
+p{
+  font-size: 2em;
+}
+.content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* Section 1
+ * --------------------------------------- */
+#section0{
+  background-color: #BFDA00;
+}
+#section0 h1{
+  color: #444;
+}
+#section0 p{
+  color: #333;
+  opacity: 0.4;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section1{
+  background-color: #2EBE21;
+}
+#section1 h1{
+  color: #fff;
+}
+#section1 p{
+  opacity: 0.8;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+#section2{
+  background-color: #2C3E50;
+}
+#section2 h1{
+  color: #F2F2F2;
+}
+#section2 p{
+  opacity: 0.6;
 }
