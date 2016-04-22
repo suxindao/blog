@@ -49,11 +49,13 @@ requirejs(['app1', 'app2', 'app3', 'fullpage', 'bootstrap'], function (app1, app
   $('#fullpage').fullpage({
     menu: '#menu',
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
     verticalCentered: true,
     navigation: false,
     //    navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
     slidesNavigation: true,
+    slidesNavPosition: 'top',
     css3: true
   });
 

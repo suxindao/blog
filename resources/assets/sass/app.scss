@@ -51,3 +51,27 @@ p{
 #section2 p{
   opacity: 0.6;
 }
+
+#menu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 10px;
+  top: 80px;
+  list-style-type: none;
+  z-index: 70;
+}
+
+#menu li {
+  float: left;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+
+#menu a {
+    float: left;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+}
