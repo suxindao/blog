@@ -41,21 +41,22 @@ requirejs(['app1', 'app2', 'app3', 'fullpage', 'bootstrap'], function (app1, app
 //  app1.hello();
 //  app2.hello();
 //  app3.hello3();
+//  window.$$ = jquery;
   myApi.app1 = app1;
   myApi.app2 = app2;
   myApi.app3 = app3;
 
-//  fullpage.initialize('#fullpage', {
-//    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-//    menu: '#menu',
-//    css3: true
-//  });
-
   $('#fullpage').fullpage({
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
     menu: '#menu',
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    verticalCentered: true,
+    navigation: false,
+    //    navigationPosition: 'right',
+    navigationTooltips: ['firstSlide', 'secondSlide'],
+    slidesNavigation: true,
     css3: true
   });
+
 
 });
 
