@@ -42,7 +42,7 @@ elixir(function (mix) {
 
   mix.sass(['app.scss'], 'public/css/app.css')
     .scripts(['app.js'], 'public/js/app.js')
-    .scripts(['app2.js'], 'public/js/app2.js')
+    .scripts(['myFullpage.js'], 'public/js/myFullpage.js')
     .scripts(['aa.js', 'bb.js'], 'public/js/aabb.js')
     .scripts(['config.js'], 'public/js/config.js')
     .version(['css/app.css', 'js/config.js']);

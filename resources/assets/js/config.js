@@ -8,7 +8,7 @@ requirejs.config({
   baseUrl: '/js',
   paths: {
     app1: 'app',
-    app2: 'app2',
+    myFullpage: 'myFullpage',
     app3: 'aabb',
     jquery: 'jquery.min',
     bootstrap: 'bootstrap.min',
@@ -36,29 +36,26 @@ requirejs.config({
 
 var myApi = {};
 
-requirejs(['app1', 'app2', 'app3', 'fullpage', 'bootstrap'], function (app1, app2, app3) {
-//  alert($().jquery);
+requirejs(['app1', 'myFullpage', 'app3', 'fullpage', 'bootstrap'], function (app1, myFullpage, app3) {
+
 //  app1.hello();
 //  app2.hello();
 //  app3.hello3();
-//  window.$$ = jquery;
+
   myApi.app1 = app1;
-  myApi.app2 = app2;
+  myApi.myFullpage = myFullpage;
   myApi.app3 = app3;
 
-  $('#fullpage').fullpage({
-    menu: '#menu',
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
-    verticalCentered: true,
-    navigation: false,
-    //    navigationPosition: 'right',
-    navigationTooltips: ['firstSlide', 'secondSlide'],
-    slidesNavigation: true,
-    slidesNavPosition: 'top',
-    css3: true
-  });
+  myFullpage.showfullpage();
 
+  //直接引用,可以使用
+//  var bbb = require('myFullpage');
+//  bbb.hello();
+
+  //通过注入方法调用
+//  require(['myFullpage'], function(aaa){
+//    aaa.hello();
+//  });
 
 });
 
