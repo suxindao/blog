@@ -60,18 +60,51 @@ p{
   top: 80px;
   list-style-type: none;
   z-index: 70;
-}
-
-#menu li {
-  float: left;
-  margin: 0 10px 0 0;
-  font-size: 14px;
-}
-
-#menu a {
+  li {
+    float: left;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+  }
+  a {
     float: left;
     padding: 10px 20px;
     background-color: #fff;
     color: #333;
     text-decoration: none;
+  }
+}
+
+.banner {
+  background: url(/images/bg1-s.jpg);
+  /*background-attachment:fixed;*/
+  background-repeat:no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+}
+
+.thin {
+  background: url(/images/h-13.jpg) 50% 0 no-repeat;
+}
+
+.cnc {
+  background: url(/images/h-24.jpg);
+  /*background-attachment:fixed;*/
+  background-repeat:no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+}
+
+.cpu {
+  background: url(/images/h-8.jpg);
+  /*background-attachment:fixed;*/
+  /*  background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;*/
+  filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+  -moz-background-size:100% 100%;
+  background-size:100% 100%;
+
 }
