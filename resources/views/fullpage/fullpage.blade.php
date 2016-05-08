@@ -52,4 +52,32 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+
+//  var reqOne = requirejs.config({
+//    baseUrl: '/js',
+//    paths: {
+//      myFullpage: 'myFullpage',
+//      jquery: 'jquery.min',
+//      fullpage: 'jquery.fullpage.min'
+//    },
+//    shim: {
+//      fullpage: {
+//        deps: ['jquery']
+//      }
+//    }
+//  });
+//
+//  reqOne(['myFullpage', 'fullpage'], function (myFullpage) {
+//
+//    $(document).ready(function () {
+//      myFullpage.hello();
+//      myFullpage.showfullpage();
+//    });
+//
+//  });
+
+</script>
 @endsection
+
+

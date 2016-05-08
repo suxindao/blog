@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-requirejs.config({
+var reqTwo = requirejs.config({
   baseUrl: '/js',
+  context: "context1",
   paths: {
     app1: 'app',
     myFullpage: 'myFullpage',
@@ -36,7 +37,7 @@ requirejs.config({
 
 var myApi = {};
 
-requirejs(['app1', 'myFullpage', 'app3', 'fullpage', 'bootstrap'], function (app1, myFullpage, app3) {
+reqTwo(['app1', 'myFullpage', 'app3', 'fullpage', 'bootstrap'], function (app1, myFullpage, app3) {
 
 //  app1.hello();
 //  app2.hello();
@@ -46,7 +47,10 @@ requirejs(['app1', 'myFullpage', 'app3', 'fullpage', 'bootstrap'], function (app
   myApi.myFullpage = myFullpage;
   myApi.app3 = app3;
 
-  myFullpage.showfullpage();
+  $(document).ready(function () {
+//    myFullpage.hello();
+    myFullpage.showfullpage();
+  });
 
   //直接引用,可以使用
 //  var bbb = require('myFullpage');
